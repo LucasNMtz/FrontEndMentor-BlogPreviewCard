@@ -1,0 +1,113 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%, 0.8);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 800;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+main{
+    background-color: var(--White);
+    width: 90%;
+    max-width: 445px;
+    box-shadow: 10px 10px 0px 0px var(--Black);
+    border-radius: 25px;
+    padding: 2rem;
+    border: 2px solid var(--Black);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-illust-figure{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.main-illust-img{
+    border-radius: 15px;
+}
+
+p, .date-span{
+    font-weight: 600;
+}
+
+.main-p{
+    color: var(--Grey);
+    line-height: 1.5;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
+.date-span{
+    font-size: 0.9em;
+}
+
+.clasf-span{
+    background-color: var(--Yellow);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+}
+
+h1{
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 1.4em;
+    margin: 0.3rem 0;
+}
+
+h1:hover{
+    color: var(--Yellow);
+}
+
+.user-info-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-figure{
+    max-width: 45px;
+}
+
+.username-span{
+    font-size: 1.05em;
+}
+
+footer{
+    margin-top: 7rem;
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--Black); }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; font-size: 14px; }
+.attribution a:hover { text-decoration: underline; }
+
+@media only screen and (max-width: 370px){
+    body{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    body{
+        font-size: 18px;
+    }
+}
